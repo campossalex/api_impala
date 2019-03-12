@@ -8,4 +8,5 @@ def query(args):
     cursor.execute('SELECT * from simon_r.players where name = "' + id + '"')
     for row in cursor:
         return row
- 
+    
+#query(json.loads('{ "name": "Aaron Swinson" }'))
